@@ -1,0 +1,93 @@
+body, html {
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  // display: none;
+}
+
+header {
+  position: absolute;
+  padding: 1em;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 2em);
+  background: white;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    li a {
+      padding: 1em;
+    }
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template: auto;
+
+  section {
+    padding: 3em;
+
+    h1, h2, .read-btn {
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    .read-btn {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      background: url('img/ARROW.svg') no-repeat;
+      background-size: 8px;
+      background-position: 0 1px;
+      padding-left: 1em;
+    }
+
+    .primary {
+      padding: 1.5em 1.5em 1.5em calc(3em + 25px);
+      background-position: 3em;
+      border: 1px solid gray;
+      display: inline-block;
+      margin-top: 3em;
+      margin-left: -3em;
+    }
+
+    .clipper {
+      overflow: hidden;
+    }
+  }
+
+  section.hero {
+    padding-top: 8em;
+    background: url('img/background_image.jpg');
+    background-size: cover;
+
+    p {
+      width: 70;
+    }
+  }
+}
